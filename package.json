@@ -1,7 +1,37 @@
 {
-  "name": "@youness/helium",
-  "version": "0.0.2",
-  "main": "index.js",
+  "name": "@younessidbakkasse/helium",
+  "version": "0.0.3",
+  "description": "Bin utilities for Helium.",
+  "exports": "./lib/index.js",
+  "main": "lib/index.js",
+  "type": "module",
   "author": "Youness Id bakkasse <std.youness@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "bin": {
+    "helium": "./lib/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "shopify",
+    "bundler",
+    "workflow"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/younessidbakkasse/helium.git"
+  },
+  "homepage": "https://helium.younessidbakkasse.com/",
+  "bugs": {
+    "url": "https://github.com/younessidbakkasse/helium/issues"
+  }
 }
