@@ -1,6 +1,6 @@
 {
   "name": "@younessidbakkasse/helium",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Bin utilities for Helium.",
   "main": "src/cli.js",
   "author": "Youness Id bakkasse <std.youness@gmail.com>",
