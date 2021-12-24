@@ -2,21 +2,23 @@
   "name": "@younessidbakkasse/helium",
   "version": "0.0.3",
   "description": "Bin utilities for Helium.",
-  "exports": "./lib/index.js",
-  "main": "lib/index.js",
-  "type": "module",
+  "main": "src/cli.js",
   "author": "Youness Id bakkasse <std.youness@gmail.com>",
-  "license": "MIT",
+  "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "eslint": "^8.5.0",
     "jest": "^27.4.5",
     "prettier": "^2.5.1"
   },
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "files": [
-    "lib"
+    "src"
   ],
   "bin": {
-    "helium": "./lib/cli.js"
+    "helium": "./src/cli.js"
   },
   "publishConfig": {
     "access": "public"
@@ -33,5 +35,9 @@
   "homepage": "https://helium.younessidbakkasse.com/",
   "bugs": {
     "url": "https://github.com/younessidbakkasse/helium/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "minimist": "^1.2.5"
   }
 }

@@ -1,4 +1,4 @@
-# @youness/helium
+# @younessidbakkasse/helium
 
 > This is the helium bundler for helium workflow
 
