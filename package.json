@@ -1,6 +1,6 @@
 {
   "name": "@idbakkasse/helium",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Bin utilities for Helium",
   "main": "src/cli.js",
   "author": "Youness Idbakkasse <youness@idbakkasse.com>",
@@ -34,7 +34,7 @@
     "type": "git",
     "url": "git://github.com/idbakkasse/helium.git"
   },
-  "homepage": "https://helium.idbakkasse.com/",
+  "homepage": "https://helium.idbakkasse.com",
   "bugs": {
     "url": "https://github.com/idbakkasse/helium/issues"
   },
