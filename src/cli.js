@@ -1,31 +1,33 @@
 #!/usr/bin/env node
 
-import chalk from 'chalk';
+import logger from "./logger.js";
+import { runShopifyCommand } from "./utils.js";
 
 const [,, ...args ] = process.argv;
-const port = 4949;
-const logger = console.log;
+const LOGGER = logger();
 
 args.forEach((value, index) => {
     switch (value) {
         case "serve":
-            logger(chalk.blue(`Helium serving the theme on port ${port}`));
+            LOGGER.info("Helium is Serving files");
+            runShopifyCommand(['serve']);
             break;
 
         case "watch":
-            logger(chalk.blue(`Helium watching over file changes`));
+            LOGGER.info("Helium watching over file changes");
             break;
         
         case "build":
-            logger(chalk.blue(`Helium is building files...`));
+            LOGGER.info("Helium is building files");
             break;
 
         case "lint":
-            logger(chalk.blue(`Helium lint finished in ..`));
+            LOGGER.info("Helium is linting files");
+            runShopifyCommand(['check']);
             break;
-    
-        default:
-            logger(chalk.red(`Unknown Helium command`));
+            
+        default:        
+            LOGGER.error("Unknown Helium command!");
             break;
     }
 })
