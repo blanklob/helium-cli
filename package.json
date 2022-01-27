@@ -1,9 +1,9 @@
 {
-  "name": "@younessidbakkasse/helium",
-  "version": "0.0.4",
-  "description": "Bin utilities for Helium.",
+  "name": "@idbakkasse/helium",
+  "version": "0.1.0",
+  "description": "Bin utilities for Helium",
   "main": "src/cli.js",
-  "author": "Youness Id bakkasse <std.youness@gmail.com>",
+  "author": "Youness Idbakkasse <youness@idbakkasse.com>",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
@@ -26,15 +26,17 @@
   "keywords": [
     "shopify",
     "bundler",
-    "workflow"
+    "cli",
+    "helium",
+    "theme"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/younessidbakkasse/helium.git"
+    "url": "git://github.com/idbakkasse/helium.git"
   },
-  "homepage": "https://helium.younessidbakkasse.com/",
+  "homepage": "https://helium.idbakkasse.com/",
   "bugs": {
-    "url": "https://github.com/younessidbakkasse/helium/issues"
+    "url": "https://github.com/idbakkasse/helium/issues"
   },
   "dependencies": {
     "chalk": "^5.0.0",

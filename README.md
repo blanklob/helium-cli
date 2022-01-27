@@ -1,10 +1,10 @@
-# @younessidbakkasse/helium
+# @idbakkasse/helium
 
-> This is the helium bundler for helium workflow
+> This is the helium bundler for helium workflow.
 
 ## Documentation
 
-You can find the documentation [here.](https://helium.younessidbakkasse.com/)
+You can find the documentation [here.](https://helium.idbakkasse.com)
 
 ## Contributing
 
@@ -12,4 +12,4 @@ Everyone is welcome to make Shopify theme development better! Please read the [C
 
 ## License
 
-Copyright (c) 2021 Youness Id bakkasse. See [LICENSE](/LICENSE) for further details.
+Copyright (c) 2022 Youness Idbakkasse. See [LICENSE](/LICENSE) for further details.
