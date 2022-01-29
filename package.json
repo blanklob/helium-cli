@@ -1,6 +1,6 @@
 {
   "name": "@idbakkasse/helium",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Bin utilities for Helium",
   "main": "src/cli.js",
   "author": "Youness Idbakkasse <youness@idbakkasse.com>",
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "chalk": "^5.0.0",
-    "minimist": "^1.2.5"
+    "esbuild": "^0.14.14",
+    "esbuild-sass-plugin": "^2.2.1"
   }
 }

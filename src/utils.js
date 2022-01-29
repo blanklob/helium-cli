@@ -12,7 +12,7 @@ export function cleanFile(pathToFile) {
     fs.unlinkSync(pathToFile);
   } catch (err) {
     switch (err.code) {
-      case 'ENOENT':
+      case "ENOENT":
         return;
       default:
         throw new Error(err);
@@ -32,42 +32,41 @@ export function runShopifyCommand(args, dir = process.cwd()) {
   return new Promise((resolve, reject) => {
     const childProcess = spawn("shopify", ["theme", ...args], {
       dir,
-      stdio: ['inherit', 'inherit', 'pipe']
+      stdio: ["inherit", "inherit", "pipe"],
     });
 
-    childProcess.on('error', (error) => {
-      LOGGER.error(error.toString('utf8'));
+    childProcess.on("error", (error) => {
+      LOGGER.error(error.toString("utf8"));
     });
 
-    childProcess.on('close', () => {
-      LOGGER.warning('Helium command finished');
+    childProcess.on("close", () => {
+      LOGGER.warning("Helium command finished");
       resolve();
-    })
+    });
   });
-};
-
+}
 
 /**
- * Checks if Shopify CLI is installed 
+ * Checks if Shopify CLI is installed
  * Does nothing if it doesn't do anything.
  * @param {string}    version   shopify cli version string
  */
 
- export function checkShopifyInstallation(version = "2.9.0") {
+export function checkShopifyInstallation(version = "2.9.0") {
   const LOGGER = logger();
 
   return new Promise((resolve, reject) => {
     const childProcess = spawn("shopify", {
-      stdio: ['inherit', 'inherit']
+      stdio: ["inherit", "inherit"],
     });
 
-    childProcess.on('error', (error) => {
-      LOGGER.error(error.toString('utf8'));
+    childProcess.on("error", (error) => {
+      LOGGER.error(error.toString("utf8"));
     });
 
-    childProcess.on('close', () => {
-      LOGGER.warning('Helium command finished');
+    childProcess.on("close", () => {
+      LOGGER.warning("Helium command finished");
       resolve();
-    })
+    });
   });
-};
+}
