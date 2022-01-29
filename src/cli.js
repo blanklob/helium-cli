@@ -12,6 +12,14 @@ args.forEach((value) => {
     case "serve":
       LOGGER.info("Helium is Serving files");
       LOGGER.warn("Helium is waiting for theme upload to finish");
+      LOGGER.info("Helium is watching over your changes");
+      try {
+        build({
+          development: true,
+        });
+      } catch (err) {
+        LOGGER.error(err);
+      }
       runShopifyCommand(["serve"]);
       break;
 

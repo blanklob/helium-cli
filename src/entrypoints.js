@@ -1,8 +1,8 @@
 export default [
   "src/scripts/base.js",
   "src/styles/base.scss",
-  "src/styles/passwod.js",
-  "src/styles/passwod.scss",
-  "src/styles/gitftcard.js",
-  "src/styles/gitftcard.scss",
+  "src/scripts/password.js",
+  "src/styles/password.scss",
+  "src/scripts/giftcard.js",
+  "src/styles/giftcard.scss",
 ];
