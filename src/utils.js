@@ -40,7 +40,7 @@ export function runShopifyCommand(args, dir = process.cwd()) {
     });
 
     childProcess.on("close", () => {
-      LOGGER.warning("Helium command finished");
+      LOGGER.warn("Helium command finished");
       resolve();
     });
   });
@@ -65,7 +65,7 @@ export function checkShopifyInstallation(version = "2.9.0") {
     });
 
     childProcess.on("close", () => {
-      LOGGER.warning("Helium command finished");
+      LOGGER.warn("Helium command finished");
       resolve();
     });
   });

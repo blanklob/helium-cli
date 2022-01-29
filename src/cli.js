@@ -38,8 +38,10 @@ args.forEach((value) => {
     case "build":
       LOGGER.info("Helium is building files crazy fast");
       try {
-        build({}).then(() =>
-          LOGGER.info("Helium finished building files in few Milliseconds")
+        build({}).then(() => {
+          LOGGER.info("Helium finished building files in few Milliseconds");
+          LOGGER.info("Helium minified all static files for production");
+        }
         );
       } catch (err) {
         LOGGER.error(err);
