@@ -1,9 +1,9 @@
 {
-  "name": "@idbakkasse/helium",
+  "name": "@blanklob/helium",
   "version": "0.1.4",
   "description": "Bin utilities for Helium",
   "main": "src/cli.js",
-  "author": "Youness Idbakkasse <youness@idbakkasse.com>",
+  "author": "Blanklob <hello@blanklob.com>",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
@@ -32,11 +32,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/idbakkasse/helium.git"
+    "url": "git://github.com/blanklob/helium.git"
   },
-  "homepage": "https://helium.idbakkasse.com",
   "bugs": {
-    "url": "https://github.com/idbakkasse/helium/issues"
+    "url": "https://github.com/blanklob/helium/issues"
   },
   "dependencies": {
     "chalk": "^5.0.0",
