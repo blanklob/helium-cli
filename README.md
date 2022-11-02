@@ -1,4 +1,4 @@
-# @balnklob/helium
+# @blanklob/helium
 
 > This is the helium bundler for helium workflow.
 
